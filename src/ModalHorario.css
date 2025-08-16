@@ -1,0 +1,59 @@
+/* ModalHorario.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.modal-container h2 {
+  margin-top: 0;
+}
+
+.modal-container form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-container form input {
+  width: 100%;
+  padding: 6px 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+.modal-container form button {
+  margin-top: 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-container form button[type="submit"] {
+  background-color: #4b6cb7;
+  color: white;
+  margin-right: 10px;
+}
+
+.modal-container form button[type="submit"]:disabled {
+  background-color: #a0a8cc;
+  cursor: not-allowed;
+}
+
+.modal-container form button[type="button"] {
+  background-color: #ccc;
+}
